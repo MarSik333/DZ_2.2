@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="flash-block block-item" >
+                <label for="flash-drive-size">Введіть обсяг флешки (в Гб):</label>
+                <input type="number" id="flash-drive-size">
+                <button onclick="calculateFiles()">Розрахувати</button>
+                <p id="result-files"></p>  
+            </div>
+        
+            <div class="money-choco block-item" >
+                <label for="money">Введіть суму грошей в гаманці:</label>
+                <input type="number" id="money">
+                <label for="price">Введіть ціну однієї шоколадки:</label>
+                <input type="number" id="price">
+                <button onclick="calculateChocolates()">Розрахувати</button>
+                <p id="result-chocolates"></p>
+            </div>
+        
+            <div class="revers-num block-item">
+                <label for="numberInput">Введи три цифри:</label>
+            <input type="number" id="numberInput" min="100" max="999">
+            <button onclick="reverseNumber()">Перевернути</button>
+            <p id="result-num"></p>
+            </div>
+        
+        
+            <div class="bank-form block-item">
+                
+            <form class="block-item">
+                <label for="deposit">Cума вкладу (покажу скільки нарахує %):</label><br>
+                <input type="number" id="deposit" name="deposit"><br>
+                <button type="button" onclick="calculateBank()">Розрахувати</button>
+                <p id="result-bank"></p>
+            </form>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
